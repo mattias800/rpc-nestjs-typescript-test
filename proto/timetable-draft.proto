@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-package TimetableDraft;
+import "common.proto";
+
+package Timetable;
 
 service TimetableDraftService {
     rpc CreateDraft (CreateDraftInput) returns (CreateDraftResponse) {}
@@ -21,8 +23,4 @@ message CreateDraftInput {
 
 message CreateDraftResponse {
     TimetableDraft timetable_draft = 1;
-}
-
-message IdInput {
-    string id = 1;
 }

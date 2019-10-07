@@ -1,6 +1,6 @@
 import * as $protobuf from "protobufjs";
-/** Namespace TimetableDraft. */
-export namespace TimetableDraft {
+/** Namespace Timetable. */
+export namespace Timetable {
 
     /** Represents a TimetableDraftService */
     class TimetableDraftService extends $protobuf.rpc.Service {
@@ -27,45 +27,45 @@ export namespace TimetableDraft {
          * @param request CreateDraftInput message or plain object
          * @param callback Node-style callback called with the error, if any, and CreateDraftResponse
          */
-        public createDraft(request: TimetableDraft.ICreateDraftInput, callback: TimetableDraft.TimetableDraftService.CreateDraftCallback): void;
+        public createDraft(request: Timetable.ICreateDraftInput, callback: Timetable.TimetableDraftService.CreateDraftCallback): void;
 
         /**
          * Calls CreateDraft.
          * @param request CreateDraftInput message or plain object
          * @returns Promise
          */
-        public createDraft(request: TimetableDraft.ICreateDraftInput): Promise<TimetableDraft.CreateDraftResponse>;
+        public createDraft(request: Timetable.ICreateDraftInput): Promise<Timetable.CreateDraftResponse>;
 
         /**
          * Calls FindOneById.
          * @param request IdInput message or plain object
          * @param callback Node-style callback called with the error, if any, and TimetableDraft
          */
-        public findOneById(request: TimetableDraft.IIdInput, callback: TimetableDraft.TimetableDraftService.FindOneByIdCallback): void;
+        public findOneById(request: IIdInput, callback: Timetable.TimetableDraftService.FindOneByIdCallback): void;
 
         /**
          * Calls FindOneById.
          * @param request IdInput message or plain object
          * @returns Promise
          */
-        public findOneById(request: TimetableDraft.IIdInput): Promise<TimetableDraft.TimetableDraft>;
+        public findOneById(request: IIdInput): Promise<Timetable.TimetableDraft>;
     }
 
     namespace TimetableDraftService {
 
         /**
-         * Callback as used by {@link TimetableDraft.TimetableDraftService#createDraft}.
+         * Callback as used by {@link Timetable.TimetableDraftService#createDraft}.
          * @param error Error, if any
          * @param [response] CreateDraftResponse
          */
-        type CreateDraftCallback = (error: (Error|null), response?: TimetableDraft.CreateDraftResponse) => void;
+        type CreateDraftCallback = (error: (Error|null), response?: Timetable.CreateDraftResponse) => void;
 
         /**
-         * Callback as used by {@link TimetableDraft.TimetableDraftService#findOneById}.
+         * Callback as used by {@link Timetable.TimetableDraftService#findOneById}.
          * @param error Error, if any
          * @param [response] TimetableDraft
          */
-        type FindOneByIdCallback = (error: (Error|null), response?: TimetableDraft.TimetableDraft) => void;
+        type FindOneByIdCallback = (error: (Error|null), response?: Timetable.TimetableDraft) => void;
     }
 
     /** Properties of a TimetableDraft. */
@@ -91,7 +91,7 @@ export namespace TimetableDraft {
          * Constructs a new TimetableDraft.
          * @param [properties] Properties to set
          */
-        constructor(properties?: TimetableDraft.ITimetableDraft);
+        constructor(properties?: Timetable.ITimetableDraft);
 
         /** TimetableDraft id. */
         public id: string;
@@ -110,23 +110,23 @@ export namespace TimetableDraft {
          * @param [properties] Properties to set
          * @returns TimetableDraft instance
          */
-        public static create(properties?: TimetableDraft.ITimetableDraft): TimetableDraft.TimetableDraft;
+        public static create(properties?: Timetable.ITimetableDraft): Timetable.TimetableDraft;
 
         /**
-         * Encodes the specified TimetableDraft message. Does not implicitly {@link TimetableDraft.TimetableDraft.verify|verify} messages.
+         * Encodes the specified TimetableDraft message. Does not implicitly {@link Timetable.TimetableDraft.verify|verify} messages.
          * @param message TimetableDraft message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: TimetableDraft.ITimetableDraft, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: Timetable.ITimetableDraft, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified TimetableDraft message, length delimited. Does not implicitly {@link TimetableDraft.TimetableDraft.verify|verify} messages.
+         * Encodes the specified TimetableDraft message, length delimited. Does not implicitly {@link Timetable.TimetableDraft.verify|verify} messages.
          * @param message TimetableDraft message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: TimetableDraft.ITimetableDraft, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: Timetable.ITimetableDraft, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a TimetableDraft message from the specified reader or buffer.
@@ -136,7 +136,7 @@ export namespace TimetableDraft {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TimetableDraft.TimetableDraft;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): Timetable.TimetableDraft;
 
         /**
          * Decodes a TimetableDraft message from the specified reader or buffer, length delimited.
@@ -145,7 +145,7 @@ export namespace TimetableDraft {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): TimetableDraft.TimetableDraft;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): Timetable.TimetableDraft;
 
         /**
          * Verifies a TimetableDraft message.
@@ -159,7 +159,7 @@ export namespace TimetableDraft {
          * @param object Plain object
          * @returns TimetableDraft
          */
-        public static fromObject(object: { [k: string]: any }): TimetableDraft.TimetableDraft;
+        public static fromObject(object: { [k: string]: any }): Timetable.TimetableDraft;
 
         /**
          * Creates a plain object from a TimetableDraft message. Also converts values to other types if specified.
@@ -167,7 +167,7 @@ export namespace TimetableDraft {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: TimetableDraft.TimetableDraft, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: Timetable.TimetableDraft, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this TimetableDraft to JSON.
@@ -190,7 +190,7 @@ export namespace TimetableDraft {
          * Constructs a new CreateDraftInput.
          * @param [properties] Properties to set
          */
-        constructor(properties?: TimetableDraft.ICreateDraftInput);
+        constructor(properties?: Timetable.ICreateDraftInput);
 
         /** CreateDraftInput name. */
         public name: string;
@@ -200,23 +200,23 @@ export namespace TimetableDraft {
          * @param [properties] Properties to set
          * @returns CreateDraftInput instance
          */
-        public static create(properties?: TimetableDraft.ICreateDraftInput): TimetableDraft.CreateDraftInput;
+        public static create(properties?: Timetable.ICreateDraftInput): Timetable.CreateDraftInput;
 
         /**
-         * Encodes the specified CreateDraftInput message. Does not implicitly {@link TimetableDraft.CreateDraftInput.verify|verify} messages.
+         * Encodes the specified CreateDraftInput message. Does not implicitly {@link Timetable.CreateDraftInput.verify|verify} messages.
          * @param message CreateDraftInput message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: TimetableDraft.ICreateDraftInput, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: Timetable.ICreateDraftInput, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified CreateDraftInput message, length delimited. Does not implicitly {@link TimetableDraft.CreateDraftInput.verify|verify} messages.
+         * Encodes the specified CreateDraftInput message, length delimited. Does not implicitly {@link Timetable.CreateDraftInput.verify|verify} messages.
          * @param message CreateDraftInput message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: TimetableDraft.ICreateDraftInput, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: Timetable.ICreateDraftInput, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a CreateDraftInput message from the specified reader or buffer.
@@ -226,7 +226,7 @@ export namespace TimetableDraft {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TimetableDraft.CreateDraftInput;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): Timetable.CreateDraftInput;
 
         /**
          * Decodes a CreateDraftInput message from the specified reader or buffer, length delimited.
@@ -235,7 +235,7 @@ export namespace TimetableDraft {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): TimetableDraft.CreateDraftInput;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): Timetable.CreateDraftInput;
 
         /**
          * Verifies a CreateDraftInput message.
@@ -249,7 +249,7 @@ export namespace TimetableDraft {
          * @param object Plain object
          * @returns CreateDraftInput
          */
-        public static fromObject(object: { [k: string]: any }): TimetableDraft.CreateDraftInput;
+        public static fromObject(object: { [k: string]: any }): Timetable.CreateDraftInput;
 
         /**
          * Creates a plain object from a CreateDraftInput message. Also converts values to other types if specified.
@@ -257,7 +257,7 @@ export namespace TimetableDraft {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: TimetableDraft.CreateDraftInput, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: Timetable.CreateDraftInput, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this CreateDraftInput to JSON.
@@ -270,7 +270,7 @@ export namespace TimetableDraft {
     interface ICreateDraftResponse {
 
         /** CreateDraftResponse timetableDraft */
-        timetableDraft?: (TimetableDraft.ITimetableDraft|null);
+        timetableDraft?: (Timetable.ITimetableDraft|null);
     }
 
     /** Represents a CreateDraftResponse. */
@@ -280,33 +280,33 @@ export namespace TimetableDraft {
          * Constructs a new CreateDraftResponse.
          * @param [properties] Properties to set
          */
-        constructor(properties?: TimetableDraft.ICreateDraftResponse);
+        constructor(properties?: Timetable.ICreateDraftResponse);
 
         /** CreateDraftResponse timetableDraft. */
-        public timetableDraft?: (TimetableDraft.ITimetableDraft|null);
+        public timetableDraft?: (Timetable.ITimetableDraft|null);
 
         /**
          * Creates a new CreateDraftResponse instance using the specified properties.
          * @param [properties] Properties to set
          * @returns CreateDraftResponse instance
          */
-        public static create(properties?: TimetableDraft.ICreateDraftResponse): TimetableDraft.CreateDraftResponse;
+        public static create(properties?: Timetable.ICreateDraftResponse): Timetable.CreateDraftResponse;
 
         /**
-         * Encodes the specified CreateDraftResponse message. Does not implicitly {@link TimetableDraft.CreateDraftResponse.verify|verify} messages.
+         * Encodes the specified CreateDraftResponse message. Does not implicitly {@link Timetable.CreateDraftResponse.verify|verify} messages.
          * @param message CreateDraftResponse message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encode(message: TimetableDraft.ICreateDraftResponse, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encode(message: Timetable.ICreateDraftResponse, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
-         * Encodes the specified CreateDraftResponse message, length delimited. Does not implicitly {@link TimetableDraft.CreateDraftResponse.verify|verify} messages.
+         * Encodes the specified CreateDraftResponse message, length delimited. Does not implicitly {@link Timetable.CreateDraftResponse.verify|verify} messages.
          * @param message CreateDraftResponse message or plain object to encode
          * @param [writer] Writer to encode to
          * @returns Writer
          */
-        public static encodeDelimited(message: TimetableDraft.ICreateDraftResponse, writer?: $protobuf.Writer): $protobuf.Writer;
+        public static encodeDelimited(message: Timetable.ICreateDraftResponse, writer?: $protobuf.Writer): $protobuf.Writer;
 
         /**
          * Decodes a CreateDraftResponse message from the specified reader or buffer.
@@ -316,7 +316,7 @@ export namespace TimetableDraft {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TimetableDraft.CreateDraftResponse;
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): Timetable.CreateDraftResponse;
 
         /**
          * Decodes a CreateDraftResponse message from the specified reader or buffer, length delimited.
@@ -325,7 +325,7 @@ export namespace TimetableDraft {
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): TimetableDraft.CreateDraftResponse;
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): Timetable.CreateDraftResponse;
 
         /**
          * Verifies a CreateDraftResponse message.
@@ -339,7 +339,7 @@ export namespace TimetableDraft {
          * @param object Plain object
          * @returns CreateDraftResponse
          */
-        public static fromObject(object: { [k: string]: any }): TimetableDraft.CreateDraftResponse;
+        public static fromObject(object: { [k: string]: any }): Timetable.CreateDraftResponse;
 
         /**
          * Creates a plain object from a CreateDraftResponse message. Also converts values to other types if specified.
@@ -347,7 +347,7 @@ export namespace TimetableDraft {
          * @param [options] Conversion options
          * @returns Plain object
          */
-        public static toObject(message: TimetableDraft.CreateDraftResponse, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        public static toObject(message: Timetable.CreateDraftResponse, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
         /**
          * Converts this CreateDraftResponse to JSON.
@@ -355,94 +355,94 @@ export namespace TimetableDraft {
          */
         public toJSON(): { [k: string]: any };
     }
+}
 
-    /** Properties of an IdInput. */
-    interface IIdInput {
+/** Properties of an IdInput. */
+export interface IIdInput {
 
-        /** IdInput id */
-        id?: (string|null);
-    }
+    /** IdInput id */
+    id?: (string|null);
+}
 
-    /** Represents an IdInput. */
-    class IdInput implements IIdInput {
+/** Represents an IdInput. */
+export class IdInput implements IIdInput {
 
-        /**
-         * Constructs a new IdInput.
-         * @param [properties] Properties to set
-         */
-        constructor(properties?: TimetableDraft.IIdInput);
+    /**
+     * Constructs a new IdInput.
+     * @param [properties] Properties to set
+     */
+    constructor(properties?: IIdInput);
 
-        /** IdInput id. */
-        public id: string;
+    /** IdInput id. */
+    public id: string;
 
-        /**
-         * Creates a new IdInput instance using the specified properties.
-         * @param [properties] Properties to set
-         * @returns IdInput instance
-         */
-        public static create(properties?: TimetableDraft.IIdInput): TimetableDraft.IdInput;
+    /**
+     * Creates a new IdInput instance using the specified properties.
+     * @param [properties] Properties to set
+     * @returns IdInput instance
+     */
+    public static create(properties?: IIdInput): IdInput;
 
-        /**
-         * Encodes the specified IdInput message. Does not implicitly {@link TimetableDraft.IdInput.verify|verify} messages.
-         * @param message IdInput message or plain object to encode
-         * @param [writer] Writer to encode to
-         * @returns Writer
-         */
-        public static encode(message: TimetableDraft.IIdInput, writer?: $protobuf.Writer): $protobuf.Writer;
+    /**
+     * Encodes the specified IdInput message. Does not implicitly {@link IdInput.verify|verify} messages.
+     * @param message IdInput message or plain object to encode
+     * @param [writer] Writer to encode to
+     * @returns Writer
+     */
+    public static encode(message: IIdInput, writer?: $protobuf.Writer): $protobuf.Writer;
 
-        /**
-         * Encodes the specified IdInput message, length delimited. Does not implicitly {@link TimetableDraft.IdInput.verify|verify} messages.
-         * @param message IdInput message or plain object to encode
-         * @param [writer] Writer to encode to
-         * @returns Writer
-         */
-        public static encodeDelimited(message: TimetableDraft.IIdInput, writer?: $protobuf.Writer): $protobuf.Writer;
+    /**
+     * Encodes the specified IdInput message, length delimited. Does not implicitly {@link IdInput.verify|verify} messages.
+     * @param message IdInput message or plain object to encode
+     * @param [writer] Writer to encode to
+     * @returns Writer
+     */
+    public static encodeDelimited(message: IIdInput, writer?: $protobuf.Writer): $protobuf.Writer;
 
-        /**
-         * Decodes an IdInput message from the specified reader or buffer.
-         * @param reader Reader or buffer to decode from
-         * @param [length] Message length if known beforehand
-         * @returns IdInput
-         * @throws {Error} If the payload is not a reader or valid buffer
-         * @throws {$protobuf.util.ProtocolError} If required fields are missing
-         */
-        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): TimetableDraft.IdInput;
+    /**
+     * Decodes an IdInput message from the specified reader or buffer.
+     * @param reader Reader or buffer to decode from
+     * @param [length] Message length if known beforehand
+     * @returns IdInput
+     * @throws {Error} If the payload is not a reader or valid buffer
+     * @throws {$protobuf.util.ProtocolError} If required fields are missing
+     */
+    public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): IdInput;
 
-        /**
-         * Decodes an IdInput message from the specified reader or buffer, length delimited.
-         * @param reader Reader or buffer to decode from
-         * @returns IdInput
-         * @throws {Error} If the payload is not a reader or valid buffer
-         * @throws {$protobuf.util.ProtocolError} If required fields are missing
-         */
-        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): TimetableDraft.IdInput;
+    /**
+     * Decodes an IdInput message from the specified reader or buffer, length delimited.
+     * @param reader Reader or buffer to decode from
+     * @returns IdInput
+     * @throws {Error} If the payload is not a reader or valid buffer
+     * @throws {$protobuf.util.ProtocolError} If required fields are missing
+     */
+    public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): IdInput;
 
-        /**
-         * Verifies an IdInput message.
-         * @param message Plain object to verify
-         * @returns `null` if valid, otherwise the reason why it is not
-         */
-        public static verify(message: { [k: string]: any }): (string|null);
+    /**
+     * Verifies an IdInput message.
+     * @param message Plain object to verify
+     * @returns `null` if valid, otherwise the reason why it is not
+     */
+    public static verify(message: { [k: string]: any }): (string|null);
 
-        /**
-         * Creates an IdInput message from a plain object. Also converts values to their respective internal types.
-         * @param object Plain object
-         * @returns IdInput
-         */
-        public static fromObject(object: { [k: string]: any }): TimetableDraft.IdInput;
+    /**
+     * Creates an IdInput message from a plain object. Also converts values to their respective internal types.
+     * @param object Plain object
+     * @returns IdInput
+     */
+    public static fromObject(object: { [k: string]: any }): IdInput;
 
-        /**
-         * Creates a plain object from an IdInput message. Also converts values to other types if specified.
-         * @param message IdInput
-         * @param [options] Conversion options
-         * @returns Plain object
-         */
-        public static toObject(message: TimetableDraft.IdInput, options?: $protobuf.IConversionOptions): { [k: string]: any };
+    /**
+     * Creates a plain object from an IdInput message. Also converts values to other types if specified.
+     * @param message IdInput
+     * @param [options] Conversion options
+     * @returns Plain object
+     */
+    public static toObject(message: IdInput, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
-        /**
-         * Converts this IdInput to JSON.
-         * @returns JSON object
-         */
-        public toJSON(): { [k: string]: any };
-    }
+    /**
+     * Converts this IdInput to JSON.
+     * @returns JSON object
+     */
+    public toJSON(): { [k: string]: any };
 }

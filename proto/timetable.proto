@@ -1,0 +1,5 @@
+syntax = "proto3";
+
+package Timetable;
+
+import public "timetable-draft.proto";

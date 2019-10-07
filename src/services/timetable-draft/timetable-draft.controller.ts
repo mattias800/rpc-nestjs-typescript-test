@@ -1,14 +1,13 @@
 import { Controller } from "@nestjs/common";
 import { GrpcMethod } from "@nestjs/microservices";
-import { TimetableDraft } from "../../types/ProtoService";
-import ICreateDraftInput = TimetableDraft.ICreateDraftInput;
-import ICreateDraftResponse = TimetableDraft.ICreateDraftResponse;
-import IIdInput = TimetableDraft.IIdInput;
-import ITimetableDraft = TimetableDraft.ITimetableDraft;
+import { IIdInput, Timetable } from "../../types/ProtoService";
+import ICreateDraftInput = Timetable.ICreateDraftInput;
+import ICreateDraftResponse = Timetable.ICreateDraftResponse;
+import ITimetableDraft = Timetable.ITimetableDraft;
 
 @Controller()
-export class TimetableDraftService {
-  @GrpcMethod()
+export class TimetableDraftController {
+  @GrpcMethod("TimetableDraftService")
   FindOneById(data: IIdInput): ITimetableDraft {
     const one: ITimetableDraft = {
       id: data.id,
@@ -19,7 +18,7 @@ export class TimetableDraftService {
     return one;
   }
 
-  @GrpcMethod()
+  @GrpcMethod("TimetableDraftService")
   CreateDraft(data: ICreateDraftInput): ICreateDraftResponse {
     const timetableDraft: ITimetableDraft = {
       id: "mattias nice id",

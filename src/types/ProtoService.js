@@ -9,20 +9,20 @@ var $Reader = $protobuf.Reader, $Writer = $protobuf.Writer, $util = $protobuf.ut
 // Exported root namespace
 var $root = $protobuf.roots["default"] || ($protobuf.roots["default"] = {});
 
-$root.TimetableDraft = (function() {
+$root.Timetable = (function() {
 
     /**
-     * Namespace TimetableDraft.
-     * @exports TimetableDraft
+     * Namespace Timetable.
+     * @exports Timetable
      * @namespace
      */
-    var TimetableDraft = {};
+    var Timetable = {};
 
-    TimetableDraft.TimetableDraftService = (function() {
+    Timetable.TimetableDraftService = (function() {
 
         /**
          * Constructs a new TimetableDraftService service.
-         * @memberof TimetableDraft
+         * @memberof Timetable
          * @classdesc Represents a TimetableDraftService
          * @extends $protobuf.rpc.Service
          * @constructor
@@ -39,7 +39,7 @@ $root.TimetableDraft = (function() {
         /**
          * Creates new TimetableDraftService service using the specified rpc implementation.
          * @function create
-         * @memberof TimetableDraft.TimetableDraftService
+         * @memberof Timetable.TimetableDraftService
          * @static
          * @param {$protobuf.RPCImpl} rpcImpl RPC implementation
          * @param {boolean} [requestDelimited=false] Whether requests are length-delimited
@@ -51,79 +51,79 @@ $root.TimetableDraft = (function() {
         };
 
         /**
-         * Callback as used by {@link TimetableDraft.TimetableDraftService#createDraft}.
-         * @memberof TimetableDraft.TimetableDraftService
+         * Callback as used by {@link Timetable.TimetableDraftService#createDraft}.
+         * @memberof Timetable.TimetableDraftService
          * @typedef CreateDraftCallback
          * @type {function}
          * @param {Error|null} error Error, if any
-         * @param {TimetableDraft.CreateDraftResponse} [response] CreateDraftResponse
+         * @param {Timetable.CreateDraftResponse} [response] CreateDraftResponse
          */
 
         /**
          * Calls CreateDraft.
          * @function createDraft
-         * @memberof TimetableDraft.TimetableDraftService
+         * @memberof Timetable.TimetableDraftService
          * @instance
-         * @param {TimetableDraft.ICreateDraftInput} request CreateDraftInput message or plain object
-         * @param {TimetableDraft.TimetableDraftService.CreateDraftCallback} callback Node-style callback called with the error, if any, and CreateDraftResponse
+         * @param {Timetable.ICreateDraftInput} request CreateDraftInput message or plain object
+         * @param {Timetable.TimetableDraftService.CreateDraftCallback} callback Node-style callback called with the error, if any, and CreateDraftResponse
          * @returns {undefined}
          * @variation 1
          */
         Object.defineProperty(TimetableDraftService.prototype.createDraft = function createDraft(request, callback) {
-            return this.rpcCall(createDraft, $root.TimetableDraft.CreateDraftInput, $root.TimetableDraft.CreateDraftResponse, request, callback);
+            return this.rpcCall(createDraft, $root.Timetable.CreateDraftInput, $root.Timetable.CreateDraftResponse, request, callback);
         }, "name", { value: "CreateDraft" });
 
         /**
          * Calls CreateDraft.
          * @function createDraft
-         * @memberof TimetableDraft.TimetableDraftService
+         * @memberof Timetable.TimetableDraftService
          * @instance
-         * @param {TimetableDraft.ICreateDraftInput} request CreateDraftInput message or plain object
-         * @returns {Promise<TimetableDraft.CreateDraftResponse>} Promise
+         * @param {Timetable.ICreateDraftInput} request CreateDraftInput message or plain object
+         * @returns {Promise<Timetable.CreateDraftResponse>} Promise
          * @variation 2
          */
 
         /**
-         * Callback as used by {@link TimetableDraft.TimetableDraftService#findOneById}.
-         * @memberof TimetableDraft.TimetableDraftService
+         * Callback as used by {@link Timetable.TimetableDraftService#findOneById}.
+         * @memberof Timetable.TimetableDraftService
          * @typedef FindOneByIdCallback
          * @type {function}
          * @param {Error|null} error Error, if any
-         * @param {TimetableDraft.TimetableDraft} [response] TimetableDraft
+         * @param {Timetable.TimetableDraft} [response] TimetableDraft
          */
 
         /**
          * Calls FindOneById.
          * @function findOneById
-         * @memberof TimetableDraft.TimetableDraftService
+         * @memberof Timetable.TimetableDraftService
          * @instance
-         * @param {TimetableDraft.IIdInput} request IdInput message or plain object
-         * @param {TimetableDraft.TimetableDraftService.FindOneByIdCallback} callback Node-style callback called with the error, if any, and TimetableDraft
+         * @param {IIdInput} request IdInput message or plain object
+         * @param {Timetable.TimetableDraftService.FindOneByIdCallback} callback Node-style callback called with the error, if any, and TimetableDraft
          * @returns {undefined}
          * @variation 1
          */
         Object.defineProperty(TimetableDraftService.prototype.findOneById = function findOneById(request, callback) {
-            return this.rpcCall(findOneById, $root.TimetableDraft.IdInput, $root.TimetableDraft.TimetableDraft, request, callback);
+            return this.rpcCall(findOneById, $root.IdInput, $root.Timetable.TimetableDraft, request, callback);
         }, "name", { value: "FindOneById" });
 
         /**
          * Calls FindOneById.
          * @function findOneById
-         * @memberof TimetableDraft.TimetableDraftService
+         * @memberof Timetable.TimetableDraftService
          * @instance
-         * @param {TimetableDraft.IIdInput} request IdInput message or plain object
-         * @returns {Promise<TimetableDraft.TimetableDraft>} Promise
+         * @param {IIdInput} request IdInput message or plain object
+         * @returns {Promise<Timetable.TimetableDraft>} Promise
          * @variation 2
          */
 
         return TimetableDraftService;
     })();
 
-    TimetableDraft.TimetableDraft = (function() {
+    Timetable.TimetableDraft = (function() {
 
         /**
          * Properties of a TimetableDraft.
-         * @memberof TimetableDraft
+         * @memberof Timetable
          * @interface ITimetableDraft
          * @property {string|null} [id] TimetableDraft id
          * @property {string|null} [name] TimetableDraft name
@@ -133,11 +133,11 @@ $root.TimetableDraft = (function() {
 
         /**
          * Constructs a new TimetableDraft.
-         * @memberof TimetableDraft
+         * @memberof Timetable
          * @classdesc Represents a TimetableDraft.
          * @implements ITimetableDraft
          * @constructor
-         * @param {TimetableDraft.ITimetableDraft=} [properties] Properties to set
+         * @param {Timetable.ITimetableDraft=} [properties] Properties to set
          */
         function TimetableDraft(properties) {
             if (properties)
@@ -149,7 +149,7 @@ $root.TimetableDraft = (function() {
         /**
          * TimetableDraft id.
          * @member {string} id
-         * @memberof TimetableDraft.TimetableDraft
+         * @memberof Timetable.TimetableDraft
          * @instance
          */
         TimetableDraft.prototype.id = "";
@@ -157,7 +157,7 @@ $root.TimetableDraft = (function() {
         /**
          * TimetableDraft name.
          * @member {string} name
-         * @memberof TimetableDraft.TimetableDraft
+         * @memberof Timetable.TimetableDraft
          * @instance
          */
         TimetableDraft.prototype.name = "";
@@ -165,7 +165,7 @@ $root.TimetableDraft = (function() {
         /**
          * TimetableDraft createdBy.
          * @member {string} createdBy
-         * @memberof TimetableDraft.TimetableDraft
+         * @memberof Timetable.TimetableDraft
          * @instance
          */
         TimetableDraft.prototype.createdBy = "";
@@ -173,7 +173,7 @@ $root.TimetableDraft = (function() {
         /**
          * TimetableDraft createdAt.
          * @member {string} createdAt
-         * @memberof TimetableDraft.TimetableDraft
+         * @memberof Timetable.TimetableDraft
          * @instance
          */
         TimetableDraft.prototype.createdAt = "";
@@ -181,21 +181,21 @@ $root.TimetableDraft = (function() {
         /**
          * Creates a new TimetableDraft instance using the specified properties.
          * @function create
-         * @memberof TimetableDraft.TimetableDraft
+         * @memberof Timetable.TimetableDraft
          * @static
-         * @param {TimetableDraft.ITimetableDraft=} [properties] Properties to set
-         * @returns {TimetableDraft.TimetableDraft} TimetableDraft instance
+         * @param {Timetable.ITimetableDraft=} [properties] Properties to set
+         * @returns {Timetable.TimetableDraft} TimetableDraft instance
          */
         TimetableDraft.create = function create(properties) {
             return new TimetableDraft(properties);
         };
 
         /**
-         * Encodes the specified TimetableDraft message. Does not implicitly {@link TimetableDraft.TimetableDraft.verify|verify} messages.
+         * Encodes the specified TimetableDraft message. Does not implicitly {@link Timetable.TimetableDraft.verify|verify} messages.
          * @function encode
-         * @memberof TimetableDraft.TimetableDraft
+         * @memberof Timetable.TimetableDraft
          * @static
-         * @param {TimetableDraft.ITimetableDraft} message TimetableDraft message or plain object to encode
+         * @param {Timetable.ITimetableDraft} message TimetableDraft message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -214,11 +214,11 @@ $root.TimetableDraft = (function() {
         };
 
         /**
-         * Encodes the specified TimetableDraft message, length delimited. Does not implicitly {@link TimetableDraft.TimetableDraft.verify|verify} messages.
+         * Encodes the specified TimetableDraft message, length delimited. Does not implicitly {@link Timetable.TimetableDraft.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof TimetableDraft.TimetableDraft
+         * @memberof Timetable.TimetableDraft
          * @static
-         * @param {TimetableDraft.ITimetableDraft} message TimetableDraft message or plain object to encode
+         * @param {Timetable.ITimetableDraft} message TimetableDraft message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -229,18 +229,18 @@ $root.TimetableDraft = (function() {
         /**
          * Decodes a TimetableDraft message from the specified reader or buffer.
          * @function decode
-         * @memberof TimetableDraft.TimetableDraft
+         * @memberof Timetable.TimetableDraft
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {TimetableDraft.TimetableDraft} TimetableDraft
+         * @returns {Timetable.TimetableDraft} TimetableDraft
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         TimetableDraft.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.TimetableDraft.TimetableDraft();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.Timetable.TimetableDraft();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -267,10 +267,10 @@ $root.TimetableDraft = (function() {
         /**
          * Decodes a TimetableDraft message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof TimetableDraft.TimetableDraft
+         * @memberof Timetable.TimetableDraft
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {TimetableDraft.TimetableDraft} TimetableDraft
+         * @returns {Timetable.TimetableDraft} TimetableDraft
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -283,7 +283,7 @@ $root.TimetableDraft = (function() {
         /**
          * Verifies a TimetableDraft message.
          * @function verify
-         * @memberof TimetableDraft.TimetableDraft
+         * @memberof Timetable.TimetableDraft
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -309,15 +309,15 @@ $root.TimetableDraft = (function() {
         /**
          * Creates a TimetableDraft message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof TimetableDraft.TimetableDraft
+         * @memberof Timetable.TimetableDraft
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {TimetableDraft.TimetableDraft} TimetableDraft
+         * @returns {Timetable.TimetableDraft} TimetableDraft
          */
         TimetableDraft.fromObject = function fromObject(object) {
-            if (object instanceof $root.TimetableDraft.TimetableDraft)
+            if (object instanceof $root.Timetable.TimetableDraft)
                 return object;
-            var message = new $root.TimetableDraft.TimetableDraft();
+            var message = new $root.Timetable.TimetableDraft();
             if (object.id != null)
                 message.id = String(object.id);
             if (object.name != null)
@@ -332,9 +332,9 @@ $root.TimetableDraft = (function() {
         /**
          * Creates a plain object from a TimetableDraft message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof TimetableDraft.TimetableDraft
+         * @memberof Timetable.TimetableDraft
          * @static
-         * @param {TimetableDraft.TimetableDraft} message TimetableDraft
+         * @param {Timetable.TimetableDraft} message TimetableDraft
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -362,7 +362,7 @@ $root.TimetableDraft = (function() {
         /**
          * Converts this TimetableDraft to JSON.
          * @function toJSON
-         * @memberof TimetableDraft.TimetableDraft
+         * @memberof Timetable.TimetableDraft
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -373,22 +373,22 @@ $root.TimetableDraft = (function() {
         return TimetableDraft;
     })();
 
-    TimetableDraft.CreateDraftInput = (function() {
+    Timetable.CreateDraftInput = (function() {
 
         /**
          * Properties of a CreateDraftInput.
-         * @memberof TimetableDraft
+         * @memberof Timetable
          * @interface ICreateDraftInput
          * @property {string|null} [name] CreateDraftInput name
          */
 
         /**
          * Constructs a new CreateDraftInput.
-         * @memberof TimetableDraft
+         * @memberof Timetable
          * @classdesc Represents a CreateDraftInput.
          * @implements ICreateDraftInput
          * @constructor
-         * @param {TimetableDraft.ICreateDraftInput=} [properties] Properties to set
+         * @param {Timetable.ICreateDraftInput=} [properties] Properties to set
          */
         function CreateDraftInput(properties) {
             if (properties)
@@ -400,7 +400,7 @@ $root.TimetableDraft = (function() {
         /**
          * CreateDraftInput name.
          * @member {string} name
-         * @memberof TimetableDraft.CreateDraftInput
+         * @memberof Timetable.CreateDraftInput
          * @instance
          */
         CreateDraftInput.prototype.name = "";
@@ -408,21 +408,21 @@ $root.TimetableDraft = (function() {
         /**
          * Creates a new CreateDraftInput instance using the specified properties.
          * @function create
-         * @memberof TimetableDraft.CreateDraftInput
+         * @memberof Timetable.CreateDraftInput
          * @static
-         * @param {TimetableDraft.ICreateDraftInput=} [properties] Properties to set
-         * @returns {TimetableDraft.CreateDraftInput} CreateDraftInput instance
+         * @param {Timetable.ICreateDraftInput=} [properties] Properties to set
+         * @returns {Timetable.CreateDraftInput} CreateDraftInput instance
          */
         CreateDraftInput.create = function create(properties) {
             return new CreateDraftInput(properties);
         };
 
         /**
-         * Encodes the specified CreateDraftInput message. Does not implicitly {@link TimetableDraft.CreateDraftInput.verify|verify} messages.
+         * Encodes the specified CreateDraftInput message. Does not implicitly {@link Timetable.CreateDraftInput.verify|verify} messages.
          * @function encode
-         * @memberof TimetableDraft.CreateDraftInput
+         * @memberof Timetable.CreateDraftInput
          * @static
-         * @param {TimetableDraft.ICreateDraftInput} message CreateDraftInput message or plain object to encode
+         * @param {Timetable.ICreateDraftInput} message CreateDraftInput message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -435,11 +435,11 @@ $root.TimetableDraft = (function() {
         };
 
         /**
-         * Encodes the specified CreateDraftInput message, length delimited. Does not implicitly {@link TimetableDraft.CreateDraftInput.verify|verify} messages.
+         * Encodes the specified CreateDraftInput message, length delimited. Does not implicitly {@link Timetable.CreateDraftInput.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof TimetableDraft.CreateDraftInput
+         * @memberof Timetable.CreateDraftInput
          * @static
-         * @param {TimetableDraft.ICreateDraftInput} message CreateDraftInput message or plain object to encode
+         * @param {Timetable.ICreateDraftInput} message CreateDraftInput message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -450,18 +450,18 @@ $root.TimetableDraft = (function() {
         /**
          * Decodes a CreateDraftInput message from the specified reader or buffer.
          * @function decode
-         * @memberof TimetableDraft.CreateDraftInput
+         * @memberof Timetable.CreateDraftInput
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {TimetableDraft.CreateDraftInput} CreateDraftInput
+         * @returns {Timetable.CreateDraftInput} CreateDraftInput
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         CreateDraftInput.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.TimetableDraft.CreateDraftInput();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.Timetable.CreateDraftInput();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
@@ -479,10 +479,10 @@ $root.TimetableDraft = (function() {
         /**
          * Decodes a CreateDraftInput message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof TimetableDraft.CreateDraftInput
+         * @memberof Timetable.CreateDraftInput
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {TimetableDraft.CreateDraftInput} CreateDraftInput
+         * @returns {Timetable.CreateDraftInput} CreateDraftInput
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -495,7 +495,7 @@ $root.TimetableDraft = (function() {
         /**
          * Verifies a CreateDraftInput message.
          * @function verify
-         * @memberof TimetableDraft.CreateDraftInput
+         * @memberof Timetable.CreateDraftInput
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -512,15 +512,15 @@ $root.TimetableDraft = (function() {
         /**
          * Creates a CreateDraftInput message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof TimetableDraft.CreateDraftInput
+         * @memberof Timetable.CreateDraftInput
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {TimetableDraft.CreateDraftInput} CreateDraftInput
+         * @returns {Timetable.CreateDraftInput} CreateDraftInput
          */
         CreateDraftInput.fromObject = function fromObject(object) {
-            if (object instanceof $root.TimetableDraft.CreateDraftInput)
+            if (object instanceof $root.Timetable.CreateDraftInput)
                 return object;
-            var message = new $root.TimetableDraft.CreateDraftInput();
+            var message = new $root.Timetable.CreateDraftInput();
             if (object.name != null)
                 message.name = String(object.name);
             return message;
@@ -529,9 +529,9 @@ $root.TimetableDraft = (function() {
         /**
          * Creates a plain object from a CreateDraftInput message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof TimetableDraft.CreateDraftInput
+         * @memberof Timetable.CreateDraftInput
          * @static
-         * @param {TimetableDraft.CreateDraftInput} message CreateDraftInput
+         * @param {Timetable.CreateDraftInput} message CreateDraftInput
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -549,7 +549,7 @@ $root.TimetableDraft = (function() {
         /**
          * Converts this CreateDraftInput to JSON.
          * @function toJSON
-         * @memberof TimetableDraft.CreateDraftInput
+         * @memberof Timetable.CreateDraftInput
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -560,22 +560,22 @@ $root.TimetableDraft = (function() {
         return CreateDraftInput;
     })();
 
-    TimetableDraft.CreateDraftResponse = (function() {
+    Timetable.CreateDraftResponse = (function() {
 
         /**
          * Properties of a CreateDraftResponse.
-         * @memberof TimetableDraft
+         * @memberof Timetable
          * @interface ICreateDraftResponse
-         * @property {TimetableDraft.ITimetableDraft|null} [timetableDraft] CreateDraftResponse timetableDraft
+         * @property {Timetable.ITimetableDraft|null} [timetableDraft] CreateDraftResponse timetableDraft
          */
 
         /**
          * Constructs a new CreateDraftResponse.
-         * @memberof TimetableDraft
+         * @memberof Timetable
          * @classdesc Represents a CreateDraftResponse.
          * @implements ICreateDraftResponse
          * @constructor
-         * @param {TimetableDraft.ICreateDraftResponse=} [properties] Properties to set
+         * @param {Timetable.ICreateDraftResponse=} [properties] Properties to set
          */
         function CreateDraftResponse(properties) {
             if (properties)
@@ -586,8 +586,8 @@ $root.TimetableDraft = (function() {
 
         /**
          * CreateDraftResponse timetableDraft.
-         * @member {TimetableDraft.ITimetableDraft|null|undefined} timetableDraft
-         * @memberof TimetableDraft.CreateDraftResponse
+         * @member {Timetable.ITimetableDraft|null|undefined} timetableDraft
+         * @memberof Timetable.CreateDraftResponse
          * @instance
          */
         CreateDraftResponse.prototype.timetableDraft = null;
@@ -595,21 +595,21 @@ $root.TimetableDraft = (function() {
         /**
          * Creates a new CreateDraftResponse instance using the specified properties.
          * @function create
-         * @memberof TimetableDraft.CreateDraftResponse
+         * @memberof Timetable.CreateDraftResponse
          * @static
-         * @param {TimetableDraft.ICreateDraftResponse=} [properties] Properties to set
-         * @returns {TimetableDraft.CreateDraftResponse} CreateDraftResponse instance
+         * @param {Timetable.ICreateDraftResponse=} [properties] Properties to set
+         * @returns {Timetable.CreateDraftResponse} CreateDraftResponse instance
          */
         CreateDraftResponse.create = function create(properties) {
             return new CreateDraftResponse(properties);
         };
 
         /**
-         * Encodes the specified CreateDraftResponse message. Does not implicitly {@link TimetableDraft.CreateDraftResponse.verify|verify} messages.
+         * Encodes the specified CreateDraftResponse message. Does not implicitly {@link Timetable.CreateDraftResponse.verify|verify} messages.
          * @function encode
-         * @memberof TimetableDraft.CreateDraftResponse
+         * @memberof Timetable.CreateDraftResponse
          * @static
-         * @param {TimetableDraft.ICreateDraftResponse} message CreateDraftResponse message or plain object to encode
+         * @param {Timetable.ICreateDraftResponse} message CreateDraftResponse message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -617,16 +617,16 @@ $root.TimetableDraft = (function() {
             if (!writer)
                 writer = $Writer.create();
             if (message.timetableDraft != null && message.hasOwnProperty("timetableDraft"))
-                $root.TimetableDraft.TimetableDraft.encode(message.timetableDraft, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
+                $root.Timetable.TimetableDraft.encode(message.timetableDraft, writer.uint32(/* id 1, wireType 2 =*/10).fork()).ldelim();
             return writer;
         };
 
         /**
-         * Encodes the specified CreateDraftResponse message, length delimited. Does not implicitly {@link TimetableDraft.CreateDraftResponse.verify|verify} messages.
+         * Encodes the specified CreateDraftResponse message, length delimited. Does not implicitly {@link Timetable.CreateDraftResponse.verify|verify} messages.
          * @function encodeDelimited
-         * @memberof TimetableDraft.CreateDraftResponse
+         * @memberof Timetable.CreateDraftResponse
          * @static
-         * @param {TimetableDraft.ICreateDraftResponse} message CreateDraftResponse message or plain object to encode
+         * @param {Timetable.ICreateDraftResponse} message CreateDraftResponse message or plain object to encode
          * @param {$protobuf.Writer} [writer] Writer to encode to
          * @returns {$protobuf.Writer} Writer
          */
@@ -637,23 +637,23 @@ $root.TimetableDraft = (function() {
         /**
          * Decodes a CreateDraftResponse message from the specified reader or buffer.
          * @function decode
-         * @memberof TimetableDraft.CreateDraftResponse
+         * @memberof Timetable.CreateDraftResponse
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
          * @param {number} [length] Message length if known beforehand
-         * @returns {TimetableDraft.CreateDraftResponse} CreateDraftResponse
+         * @returns {Timetable.CreateDraftResponse} CreateDraftResponse
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
         CreateDraftResponse.decode = function decode(reader, length) {
             if (!(reader instanceof $Reader))
                 reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.TimetableDraft.CreateDraftResponse();
+            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.Timetable.CreateDraftResponse();
             while (reader.pos < end) {
                 var tag = reader.uint32();
                 switch (tag >>> 3) {
                 case 1:
-                    message.timetableDraft = $root.TimetableDraft.TimetableDraft.decode(reader, reader.uint32());
+                    message.timetableDraft = $root.Timetable.TimetableDraft.decode(reader, reader.uint32());
                     break;
                 default:
                     reader.skipType(tag & 7);
@@ -666,10 +666,10 @@ $root.TimetableDraft = (function() {
         /**
          * Decodes a CreateDraftResponse message from the specified reader or buffer, length delimited.
          * @function decodeDelimited
-         * @memberof TimetableDraft.CreateDraftResponse
+         * @memberof Timetable.CreateDraftResponse
          * @static
          * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {TimetableDraft.CreateDraftResponse} CreateDraftResponse
+         * @returns {Timetable.CreateDraftResponse} CreateDraftResponse
          * @throws {Error} If the payload is not a reader or valid buffer
          * @throws {$protobuf.util.ProtocolError} If required fields are missing
          */
@@ -682,7 +682,7 @@ $root.TimetableDraft = (function() {
         /**
          * Verifies a CreateDraftResponse message.
          * @function verify
-         * @memberof TimetableDraft.CreateDraftResponse
+         * @memberof Timetable.CreateDraftResponse
          * @static
          * @param {Object.<string,*>} message Plain object to verify
          * @returns {string|null} `null` if valid, otherwise the reason why it is not
@@ -691,7 +691,7 @@ $root.TimetableDraft = (function() {
             if (typeof message !== "object" || message === null)
                 return "object expected";
             if (message.timetableDraft != null && message.hasOwnProperty("timetableDraft")) {
-                var error = $root.TimetableDraft.TimetableDraft.verify(message.timetableDraft);
+                var error = $root.Timetable.TimetableDraft.verify(message.timetableDraft);
                 if (error)
                     return "timetableDraft." + error;
             }
@@ -701,19 +701,19 @@ $root.TimetableDraft = (function() {
         /**
          * Creates a CreateDraftResponse message from a plain object. Also converts values to their respective internal types.
          * @function fromObject
-         * @memberof TimetableDraft.CreateDraftResponse
+         * @memberof Timetable.CreateDraftResponse
          * @static
          * @param {Object.<string,*>} object Plain object
-         * @returns {TimetableDraft.CreateDraftResponse} CreateDraftResponse
+         * @returns {Timetable.CreateDraftResponse} CreateDraftResponse
          */
         CreateDraftResponse.fromObject = function fromObject(object) {
-            if (object instanceof $root.TimetableDraft.CreateDraftResponse)
+            if (object instanceof $root.Timetable.CreateDraftResponse)
                 return object;
-            var message = new $root.TimetableDraft.CreateDraftResponse();
+            var message = new $root.Timetable.CreateDraftResponse();
             if (object.timetableDraft != null) {
                 if (typeof object.timetableDraft !== "object")
-                    throw TypeError(".TimetableDraft.CreateDraftResponse.timetableDraft: object expected");
-                message.timetableDraft = $root.TimetableDraft.TimetableDraft.fromObject(object.timetableDraft);
+                    throw TypeError(".Timetable.CreateDraftResponse.timetableDraft: object expected");
+                message.timetableDraft = $root.Timetable.TimetableDraft.fromObject(object.timetableDraft);
             }
             return message;
         };
@@ -721,9 +721,9 @@ $root.TimetableDraft = (function() {
         /**
          * Creates a plain object from a CreateDraftResponse message. Also converts values to other types if specified.
          * @function toObject
-         * @memberof TimetableDraft.CreateDraftResponse
+         * @memberof Timetable.CreateDraftResponse
          * @static
-         * @param {TimetableDraft.CreateDraftResponse} message CreateDraftResponse
+         * @param {Timetable.CreateDraftResponse} message CreateDraftResponse
          * @param {$protobuf.IConversionOptions} [options] Conversion options
          * @returns {Object.<string,*>} Plain object
          */
@@ -734,14 +734,14 @@ $root.TimetableDraft = (function() {
             if (options.defaults)
                 object.timetableDraft = null;
             if (message.timetableDraft != null && message.hasOwnProperty("timetableDraft"))
-                object.timetableDraft = $root.TimetableDraft.TimetableDraft.toObject(message.timetableDraft, options);
+                object.timetableDraft = $root.Timetable.TimetableDraft.toObject(message.timetableDraft, options);
             return object;
         };
 
         /**
          * Converts this CreateDraftResponse to JSON.
          * @function toJSON
-         * @memberof TimetableDraft.CreateDraftResponse
+         * @memberof Timetable.CreateDraftResponse
          * @instance
          * @returns {Object.<string,*>} JSON object
          */
@@ -752,194 +752,194 @@ $root.TimetableDraft = (function() {
         return CreateDraftResponse;
     })();
 
-    TimetableDraft.IdInput = (function() {
+    return Timetable;
+})();
 
-        /**
-         * Properties of an IdInput.
-         * @memberof TimetableDraft
-         * @interface IIdInput
-         * @property {string|null} [id] IdInput id
-         */
+$root.IdInput = (function() {
 
-        /**
-         * Constructs a new IdInput.
-         * @memberof TimetableDraft
-         * @classdesc Represents an IdInput.
-         * @implements IIdInput
-         * @constructor
-         * @param {TimetableDraft.IIdInput=} [properties] Properties to set
-         */
-        function IdInput(properties) {
-            if (properties)
-                for (var keys = Object.keys(properties), i = 0; i < keys.length; ++i)
-                    if (properties[keys[i]] != null)
-                        this[keys[i]] = properties[keys[i]];
-        }
+    /**
+     * Properties of an IdInput.
+     * @exports IIdInput
+     * @interface IIdInput
+     * @property {string|null} [id] IdInput id
+     */
 
-        /**
-         * IdInput id.
-         * @member {string} id
-         * @memberof TimetableDraft.IdInput
-         * @instance
-         */
-        IdInput.prototype.id = "";
+    /**
+     * Constructs a new IdInput.
+     * @exports IdInput
+     * @classdesc Represents an IdInput.
+     * @implements IIdInput
+     * @constructor
+     * @param {IIdInput=} [properties] Properties to set
+     */
+    function IdInput(properties) {
+        if (properties)
+            for (var keys = Object.keys(properties), i = 0; i < keys.length; ++i)
+                if (properties[keys[i]] != null)
+                    this[keys[i]] = properties[keys[i]];
+    }
 
-        /**
-         * Creates a new IdInput instance using the specified properties.
-         * @function create
-         * @memberof TimetableDraft.IdInput
-         * @static
-         * @param {TimetableDraft.IIdInput=} [properties] Properties to set
-         * @returns {TimetableDraft.IdInput} IdInput instance
-         */
-        IdInput.create = function create(properties) {
-            return new IdInput(properties);
-        };
+    /**
+     * IdInput id.
+     * @member {string} id
+     * @memberof IdInput
+     * @instance
+     */
+    IdInput.prototype.id = "";
 
-        /**
-         * Encodes the specified IdInput message. Does not implicitly {@link TimetableDraft.IdInput.verify|verify} messages.
-         * @function encode
-         * @memberof TimetableDraft.IdInput
-         * @static
-         * @param {TimetableDraft.IIdInput} message IdInput message or plain object to encode
-         * @param {$protobuf.Writer} [writer] Writer to encode to
-         * @returns {$protobuf.Writer} Writer
-         */
-        IdInput.encode = function encode(message, writer) {
-            if (!writer)
-                writer = $Writer.create();
-            if (message.id != null && message.hasOwnProperty("id"))
-                writer.uint32(/* id 1, wireType 2 =*/10).string(message.id);
-            return writer;
-        };
+    /**
+     * Creates a new IdInput instance using the specified properties.
+     * @function create
+     * @memberof IdInput
+     * @static
+     * @param {IIdInput=} [properties] Properties to set
+     * @returns {IdInput} IdInput instance
+     */
+    IdInput.create = function create(properties) {
+        return new IdInput(properties);
+    };
 
-        /**
-         * Encodes the specified IdInput message, length delimited. Does not implicitly {@link TimetableDraft.IdInput.verify|verify} messages.
-         * @function encodeDelimited
-         * @memberof TimetableDraft.IdInput
-         * @static
-         * @param {TimetableDraft.IIdInput} message IdInput message or plain object to encode
-         * @param {$protobuf.Writer} [writer] Writer to encode to
-         * @returns {$protobuf.Writer} Writer
-         */
-        IdInput.encodeDelimited = function encodeDelimited(message, writer) {
-            return this.encode(message, writer).ldelim();
-        };
+    /**
+     * Encodes the specified IdInput message. Does not implicitly {@link IdInput.verify|verify} messages.
+     * @function encode
+     * @memberof IdInput
+     * @static
+     * @param {IIdInput} message IdInput message or plain object to encode
+     * @param {$protobuf.Writer} [writer] Writer to encode to
+     * @returns {$protobuf.Writer} Writer
+     */
+    IdInput.encode = function encode(message, writer) {
+        if (!writer)
+            writer = $Writer.create();
+        if (message.id != null && message.hasOwnProperty("id"))
+            writer.uint32(/* id 1, wireType 2 =*/10).string(message.id);
+        return writer;
+    };
 
-        /**
-         * Decodes an IdInput message from the specified reader or buffer.
-         * @function decode
-         * @memberof TimetableDraft.IdInput
-         * @static
-         * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @param {number} [length] Message length if known beforehand
-         * @returns {TimetableDraft.IdInput} IdInput
-         * @throws {Error} If the payload is not a reader or valid buffer
-         * @throws {$protobuf.util.ProtocolError} If required fields are missing
-         */
-        IdInput.decode = function decode(reader, length) {
-            if (!(reader instanceof $Reader))
-                reader = $Reader.create(reader);
-            var end = length === undefined ? reader.len : reader.pos + length, message = new $root.TimetableDraft.IdInput();
-            while (reader.pos < end) {
-                var tag = reader.uint32();
-                switch (tag >>> 3) {
-                case 1:
-                    message.id = reader.string();
-                    break;
-                default:
-                    reader.skipType(tag & 7);
-                    break;
-                }
+    /**
+     * Encodes the specified IdInput message, length delimited. Does not implicitly {@link IdInput.verify|verify} messages.
+     * @function encodeDelimited
+     * @memberof IdInput
+     * @static
+     * @param {IIdInput} message IdInput message or plain object to encode
+     * @param {$protobuf.Writer} [writer] Writer to encode to
+     * @returns {$protobuf.Writer} Writer
+     */
+    IdInput.encodeDelimited = function encodeDelimited(message, writer) {
+        return this.encode(message, writer).ldelim();
+    };
+
+    /**
+     * Decodes an IdInput message from the specified reader or buffer.
+     * @function decode
+     * @memberof IdInput
+     * @static
+     * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
+     * @param {number} [length] Message length if known beforehand
+     * @returns {IdInput} IdInput
+     * @throws {Error} If the payload is not a reader or valid buffer
+     * @throws {$protobuf.util.ProtocolError} If required fields are missing
+     */
+    IdInput.decode = function decode(reader, length) {
+        if (!(reader instanceof $Reader))
+            reader = $Reader.create(reader);
+        var end = length === undefined ? reader.len : reader.pos + length, message = new $root.IdInput();
+        while (reader.pos < end) {
+            var tag = reader.uint32();
+            switch (tag >>> 3) {
+            case 1:
+                message.id = reader.string();
+                break;
+            default:
+                reader.skipType(tag & 7);
+                break;
             }
-            return message;
-        };
+        }
+        return message;
+    };
 
-        /**
-         * Decodes an IdInput message from the specified reader or buffer, length delimited.
-         * @function decodeDelimited
-         * @memberof TimetableDraft.IdInput
-         * @static
-         * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
-         * @returns {TimetableDraft.IdInput} IdInput
-         * @throws {Error} If the payload is not a reader or valid buffer
-         * @throws {$protobuf.util.ProtocolError} If required fields are missing
-         */
-        IdInput.decodeDelimited = function decodeDelimited(reader) {
-            if (!(reader instanceof $Reader))
-                reader = new $Reader(reader);
-            return this.decode(reader, reader.uint32());
-        };
+    /**
+     * Decodes an IdInput message from the specified reader or buffer, length delimited.
+     * @function decodeDelimited
+     * @memberof IdInput
+     * @static
+     * @param {$protobuf.Reader|Uint8Array} reader Reader or buffer to decode from
+     * @returns {IdInput} IdInput
+     * @throws {Error} If the payload is not a reader or valid buffer
+     * @throws {$protobuf.util.ProtocolError} If required fields are missing
+     */
+    IdInput.decodeDelimited = function decodeDelimited(reader) {
+        if (!(reader instanceof $Reader))
+            reader = new $Reader(reader);
+        return this.decode(reader, reader.uint32());
+    };
 
-        /**
-         * Verifies an IdInput message.
-         * @function verify
-         * @memberof TimetableDraft.IdInput
-         * @static
-         * @param {Object.<string,*>} message Plain object to verify
-         * @returns {string|null} `null` if valid, otherwise the reason why it is not
-         */
-        IdInput.verify = function verify(message) {
-            if (typeof message !== "object" || message === null)
-                return "object expected";
-            if (message.id != null && message.hasOwnProperty("id"))
-                if (!$util.isString(message.id))
-                    return "id: string expected";
-            return null;
-        };
+    /**
+     * Verifies an IdInput message.
+     * @function verify
+     * @memberof IdInput
+     * @static
+     * @param {Object.<string,*>} message Plain object to verify
+     * @returns {string|null} `null` if valid, otherwise the reason why it is not
+     */
+    IdInput.verify = function verify(message) {
+        if (typeof message !== "object" || message === null)
+            return "object expected";
+        if (message.id != null && message.hasOwnProperty("id"))
+            if (!$util.isString(message.id))
+                return "id: string expected";
+        return null;
+    };
 
-        /**
-         * Creates an IdInput message from a plain object. Also converts values to their respective internal types.
-         * @function fromObject
-         * @memberof TimetableDraft.IdInput
-         * @static
-         * @param {Object.<string,*>} object Plain object
-         * @returns {TimetableDraft.IdInput} IdInput
-         */
-        IdInput.fromObject = function fromObject(object) {
-            if (object instanceof $root.TimetableDraft.IdInput)
-                return object;
-            var message = new $root.TimetableDraft.IdInput();
-            if (object.id != null)
-                message.id = String(object.id);
-            return message;
-        };
-
-        /**
-         * Creates a plain object from an IdInput message. Also converts values to other types if specified.
-         * @function toObject
-         * @memberof TimetableDraft.IdInput
-         * @static
-         * @param {TimetableDraft.IdInput} message IdInput
-         * @param {$protobuf.IConversionOptions} [options] Conversion options
-         * @returns {Object.<string,*>} Plain object
-         */
-        IdInput.toObject = function toObject(message, options) {
-            if (!options)
-                options = {};
-            var object = {};
-            if (options.defaults)
-                object.id = "";
-            if (message.id != null && message.hasOwnProperty("id"))
-                object.id = message.id;
+    /**
+     * Creates an IdInput message from a plain object. Also converts values to their respective internal types.
+     * @function fromObject
+     * @memberof IdInput
+     * @static
+     * @param {Object.<string,*>} object Plain object
+     * @returns {IdInput} IdInput
+     */
+    IdInput.fromObject = function fromObject(object) {
+        if (object instanceof $root.IdInput)
             return object;
-        };
+        var message = new $root.IdInput();
+        if (object.id != null)
+            message.id = String(object.id);
+        return message;
+    };
 
-        /**
-         * Converts this IdInput to JSON.
-         * @function toJSON
-         * @memberof TimetableDraft.IdInput
-         * @instance
-         * @returns {Object.<string,*>} JSON object
-         */
-        IdInput.prototype.toJSON = function toJSON() {
-            return this.constructor.toObject(this, $protobuf.util.toJSONOptions);
-        };
+    /**
+     * Creates a plain object from an IdInput message. Also converts values to other types if specified.
+     * @function toObject
+     * @memberof IdInput
+     * @static
+     * @param {IdInput} message IdInput
+     * @param {$protobuf.IConversionOptions} [options] Conversion options
+     * @returns {Object.<string,*>} Plain object
+     */
+    IdInput.toObject = function toObject(message, options) {
+        if (!options)
+            options = {};
+        var object = {};
+        if (options.defaults)
+            object.id = "";
+        if (message.id != null && message.hasOwnProperty("id"))
+            object.id = message.id;
+        return object;
+    };
 
-        return IdInput;
-    })();
+    /**
+     * Converts this IdInput to JSON.
+     * @function toJSON
+     * @memberof IdInput
+     * @instance
+     * @returns {Object.<string,*>} JSON object
+     */
+    IdInput.prototype.toJSON = function toJSON() {
+        return this.constructor.toObject(this, $protobuf.util.toJSONOptions);
+    };
 
-    return TimetableDraft;
+    return IdInput;
 })();
 
 module.exports = $root;

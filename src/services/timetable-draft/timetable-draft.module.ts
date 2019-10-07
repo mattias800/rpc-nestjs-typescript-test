@@ -1,7 +1,7 @@
 import { Module } from "@nestjs/common";
-import { TimetableDraftService } from "./timetable-draft.service";
+import { TimetableDraftController } from "./timetable-draft.controller";
 
 @Module({
-  controllers: [TimetableDraftService]
+  controllers: [TimetableDraftController]
 })
 export class TimetableDraftModule {}
