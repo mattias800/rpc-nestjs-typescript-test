@@ -11,10 +11,9 @@ async function bootstrap() {
     transport: Transport.GRPC,
     options: {
       url: "0.0.0.0:5000",
-      package: "timetabledraft",
+      package: "TimetableDraft",
       protoPath: "./timetable-draft.proto",
       loader: {
-        keepCase: true,
         longs: Number,
         defaults: false,
         arrays: true,

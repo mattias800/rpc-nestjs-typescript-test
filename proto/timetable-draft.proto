@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package timetabledraft;
+package TimetableDraft;
 
 service TimetableDraftService {
     rpc CreateDraft (CreateDraftInput) returns (CreateDraftResponse) {}

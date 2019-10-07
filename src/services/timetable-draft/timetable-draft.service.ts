@@ -1,30 +1,32 @@
 import { Controller } from "@nestjs/common";
 import { GrpcMethod } from "@nestjs/microservices";
-import {
-  CreateDraftInput,
-  IdInput,
-  TimetableDraft
-} from "../../types/proto/timetable-draft_pb";
+import { TimetableDraft } from "../../types/ProtoService";
+import ICreateDraftInput = TimetableDraft.ICreateDraftInput;
+import ICreateDraftResponse = TimetableDraft.ICreateDraftResponse;
+import IIdInput = TimetableDraft.IIdInput;
+import ITimetableDraft = TimetableDraft.ITimetableDraft;
 
 @Controller()
 export class TimetableDraftService {
   @GrpcMethod()
-  FindOneById(data: IdInput): TimetableDraft {
-    const one = new TimetableDraft();
-    one.setId(data.getId());
-    one.setCreatedAt(new Date().toISOString());
-    one.setCreatedBy("");
-    one.setName("some name");
+  FindOneById(data: IIdInput): ITimetableDraft {
+    const one: ITimetableDraft = {
+      id: data.id,
+      createdAt: new Date().toISOString(),
+      createdBy: "Must",
+      name: "Mattias"
+    };
     return one;
   }
 
   @GrpcMethod()
-  CreateDraft(data: CreateDraftInput): TimetableDraft {
-    const one = new TimetableDraft();
-    one.setId("123123123123123");
-    one.setCreatedAt(new Date().toISOString());
-    one.setCreatedBy("");
-    one.setName(data.getName());
-    return one;
+  CreateDraft(data: ICreateDraftInput): ICreateDraftResponse {
+    const timetableDraft: ITimetableDraft = {
+      id: "mattias nice id",
+      createdAt: new Date().toISOString(),
+      createdBy: "mangan",
+      name: data.name
+    };
+    return { timetableDraft };
   }
 }
