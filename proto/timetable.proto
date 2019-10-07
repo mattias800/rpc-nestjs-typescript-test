@@ -2,4 +2,7 @@ syntax = "proto3";
 
 package Timetable;
 
-import public "timetable-draft.proto";
+import public "change-set/timetable-change-set-service.proto";
+import public "port/port-service.proto";
+import public "timetable/timetable-service.proto";
+import public "ship/ship-service.proto";

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package Timetable;
+
+import public "terminal.proto";
+import "../common.proto";
+
+service PortService {
+    rpc GetPortByCode (CodeInput) returns (Port) {}
+    rpc GetTerminalByCode (CodeInput) returns (Terminal) {}
+    rpc GetCityByCode (CodeInput) returns (City) {}
+    rpc GetCountryByCode (CodeInput) returns (Country) {}
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package Timetable;
+
+import "ship.proto";
+import "../common.proto";
+
+service ShipService {
+    rpc GetShipByCode (CodeInput) returns (Ship) {}
+    rpc GetAllShips (EmptyInput) returns (GetAllShipsResponse) {}
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+message Ship {
+    string id = 1;
+    string code = 2;
+    string name = 3;
+    string imo = 4;
+}
+
+message GetAllShipsResponse {
+    repeated Ship ships = 1;
+}

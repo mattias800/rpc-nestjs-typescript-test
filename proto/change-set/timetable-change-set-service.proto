@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Timetable;
+
+import public "timetable-change-set.proto";
+
+service TimetableChangeSetService {
+    rpc CreateChangeSet (CreateChangeSetInput) returns (CreateChangeSetResponse) {}
+    rpc GetChangeSetById (IdInput) returns (TimetableChangeSet) {}
+}

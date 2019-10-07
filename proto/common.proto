@@ -3,3 +3,17 @@ syntax = "proto3";
 message IdInput {
     string id = 1;
 }
+
+message CodeInput {
+    string code = 1;
+}
+
+message EmptyInput {
+
+}
+
+message ModifiedString {
+    bool isModified = 1;
+    string value = 2;
+}
+

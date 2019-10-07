@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+import "../common.proto";
+
+message CreateChangeSetInput {
+    string name = 1;
+}
+
+message CreateChangeSetResponse {
+    TimetableChangeSet timetableChangeSet = 1;
+}
+
+message TimetableChangeSet {
+    string id = 1;
+    string name = 2;
+    string createdBy = 3;
+    string createdAt = 4;
+    repeated DepartureAddition additions = 5;
+    repeated DepartureModification modifications = 6;
+    repeated DepartureDeletion deletions = 7;
+}
+
+message DepartureAddition {
+    string id = 1;
+    string shipCode = 2;
+    string plannedDeparture = 3;
+    string plannedArrival = 4;
+    string departureTerminalCode = 5;
+    string arrivalTerminalCode = 6;
+}
+
+message DepartureModification {
+    string id = 1;
+    string departureId = 2;
+    ModifiedString shipCode = 3;
+    ModifiedString plannedDeparture = 4;
+    ModifiedString plannedArrival = 5;
+    ModifiedString departureTerminalCode = 6;
+    ModifiedString arrivalTerminalCode = 7;
+}
+
+message DepartureDeletion {
+    string id = 1;
+    string departureId = 2;
+}

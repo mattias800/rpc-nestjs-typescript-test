@@ -12,7 +12,7 @@ async function bootstrap() {
     options: {
       url: "0.0.0.0:5000",
       package: "Timetable",
-      protoPath: "./timetable-draft.proto",
+      protoPath: "./timetable.proto",
       loader: {
         longs: Number,
         defaults: false,

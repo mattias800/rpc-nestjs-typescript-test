@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+message Terminal {
+    string id = 1;
+    string code = 2;
+    string portCode = 3;
+    string name = 4;
+}
+
+message Port {
+    string id = 1;
+    string code = 2;
+    string cityCode = 3;
+    string name = 4;
+}
+
+message City {
+    string id = 1;
+    string code = 2;
+    string countryCode = 3;
+    string name = 4;
+    TimeZone timezone = 5;
+}
+
+message Country {
+    string id = 1;
+    string code = 2;
+    string name = 3;
+    TimeZone timezone = 4;
+}
+
+message TimeZone {
+    int32 offset = 1;
+}

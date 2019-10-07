@@ -1,10 +1,10 @@
 import { Module } from "@nestjs/common";
 import { AppController } from "./app.controller";
 import { AppService } from "./app.service";
-import { TimetableDraftModule } from "./services/timetable-draft/timetable-draft.module";
+import { TimetableModule } from "./timetable.module";
 
 @Module({
-  imports: [TimetableDraftModule],
+  imports: [TimetableModule],
   controllers: [AppController],
   providers: [AppService]
 })
