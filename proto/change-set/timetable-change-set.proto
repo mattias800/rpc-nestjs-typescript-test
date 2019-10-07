@@ -22,24 +22,30 @@ message TimetableChangeSet {
 
 message DepartureAddition {
     string id = 1;
-    string shipCode = 2;
-    string plannedDeparture = 3;
-    string plannedArrival = 4;
-    string departureTerminalCode = 5;
-    string arrivalTerminalCode = 6;
+    string createdBy = 2;
+    string createdAt = 3;
+    string shipCode = 4;
+    string plannedDeparture = 5;
+    string plannedArrival = 6;
+    string departureTerminalCode = 7;
+    string arrivalTerminalCode = 8;
 }
 
 message DepartureModification {
     string id = 1;
-    string departureId = 2;
-    ModifiedString shipCode = 3;
-    ModifiedString plannedDeparture = 4;
-    ModifiedString plannedArrival = 5;
-    ModifiedString departureTerminalCode = 6;
-    ModifiedString arrivalTerminalCode = 7;
+    string createdBy = 2;
+    string createdAt = 3;
+    string departureId = 4;
+    ModifiedString shipCode = 5;
+    ModifiedString plannedDeparture = 6;
+    ModifiedString plannedArrival = 7;
+    ModifiedString departureTerminalCode = 8;
+    ModifiedString arrivalTerminalCode = 9;
 }
 
 message DepartureDeletion {
     string id = 1;
-    string departureId = 2;
+    string createdBy = 2;
+    string createdAt = 3;
+    string departureId = 4;
 }

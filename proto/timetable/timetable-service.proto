@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package Timetable;
 
-import "timetable-filter.proto";
+import "timetable-search.proto";
 
 service TimetableService {
     rpc SearchTimeTable (SearchTimeTableInput) returns (SearchTimeTableResponse) {}
