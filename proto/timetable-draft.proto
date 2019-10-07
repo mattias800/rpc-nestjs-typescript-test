@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package timetabledraft;
+
+service TimetableDraftService {
+    rpc CreateDraft (CreateDraftInput) returns (CreateDraftResponse) {}
+    rpc FindOneById (IdInput) returns (TimetableDraft) {}
+}
+
+message TimetableDraft {
+    string id = 1;
+    string name = 2;
+    string created_by = 3;
+    string created_at = 4;
+}
+
+
+message CreateDraftInput {
+    string name = 1;
+}
+
+message CreateDraftResponse {
+    TimetableDraft timetable_draft = 1;
+}
+
+message IdInput {
+    string id = 1;
+}
